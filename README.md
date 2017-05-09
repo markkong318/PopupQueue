@@ -32,3 +32,6 @@ In the callback parameter, you could add some code which will run after the popu
 Beside the callback parameter, I also add some parameter for grouping. You could check them in code.
 
 After there are lots of popup calls $(window).trigger(), the manager will only let one to show up. The next popup will show automatically only when the first one is closed. The order in the manager is FIFO.
+
+## License
+Released under the [MIT license](http://www.opensource.org/licenses/MIT).
