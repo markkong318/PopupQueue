@@ -21,3 +21,14 @@ When your popup close, you should tell the manager you has been closed
 $(window).trigger('close_popup');
 ```
 OK, when everything is ready, you could start to push the popup into the manager.
+```
+$(window).trigger('show_popup', {
+    trigger_id  : "popup_trigger-" + identifier,
+    callback    : function (target) {...}
+});
+```
+In the callback parameter, you could add some code which will run after the popup shows.
+
+Beside the callback parameter, I also add some parameter for grouping. You could check them in code.
+
+After there are lots of popup calls $(window).trigger(), the manager will only let one to show up. The next popup will show automatically only when the first one is closed. The order in the manager is FIFO.
