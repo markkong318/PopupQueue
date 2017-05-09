@@ -12,7 +12,7 @@ Before you start, you should make a hidden link for open popup
 ```
 <a href="javascript:void(0);" data-target="foo" id="popup_trigger-foo" style="visibility:hidden;"></a>
 ```
-Your popup target is call foo, and you should add a onClick on this link to open your popup.
+Your popup target is called foo, and you should add a onClick on this link to open your popup.
 
 If you do not like this, you can modify the source code to fit your requirement.
 
